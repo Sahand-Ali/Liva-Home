@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Icon/flower-pot.png">
+    <title>Contact Us - Liva Home</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- Custom styles -->
+    <style>
+        body {
+            background-color: rgb(15 23 42);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+              <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                  <!-- Mobile menu button -->
+                  <button id="menu-toggle" onclick="toggleMobileMenu()" type="button"
+                      class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                      aria-controls="mobile-menu" aria-expanded="false">
+                      <span class="absolute -inset-0.5"></span>
+                      <span class="sr-only">Open main menu</span>
+                      <!-- Icon when menu is closed -->
+                      <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                          stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      <!-- Icon when menu is open -->
+                      <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                          stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                  </button>
+              </div>
+              <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="flex flex-shrink-0 items-center">
+                      <img class="h-8 w-auto" src="Icon/flower.png" alt="Your Company">
+                  </div>
+                  <div class="hidden sm:ml-6 sm:block ">
+                      <div class="flex space-x-4">
+                          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                          <a href="index.php"
+                              class="hover:no-underline hover:shadow-md inline-block px-4 py-2 mr-2 rounded-md bg-gray-600 hover:bg-gray-700 ">Home</a>
+                          <a href="upload.php"
+                              class="hover:no-underline hover:shadow-md inline-block px-4 py-2 mr-2 rounded-md bg-gray-600 hover:bg-gray-700">Upload
+                              Image</a>
+                          <a href="contact.html" class="hover:no-underline hover:shadow-md inline-block px-4 py-2 mr-2 rounded-md bg-gray-600 hover:bg-gray-700">Contact Us</a>
+                          <a href="admin_dashboard.php" class="hover:no-underline hover:shadow-md inline-block px-4 py-2 mr-2 rounded-md bg-gray-600 hover:bg-gray-700">Admin Dashboard</a>
+                          <a href="logout.php" class="hover:no-underline hover:shadow-md inline-block px-4 py-2 mr-2 rounded-md bg-gray-600 hover:bg-gray-700">Logout</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="mr-4 text-white">
+              </div>
+          </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+          <div class="flex flex-col space-y-1 px-2 pb-3 pt-2 items-center">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="index.php"
+                  class="hover:no-underline hover:shadow-md inline-block px-4 py-2 mr-2 rounded-md bg-gray-600 hover:bg-gray-700">Home</a>
+              <a href="upload.php"
+                  class="hover:no-underline hover:shadow-md inline-block px-4 py-2 mr-2 rounded-md bg-gray-600 hover:bg-gray-700">Upload Image</a>
+              <a href="login.php"
+                  class="hover:no-underline hover:shadow-md inline-block px-4 py-2 mr-2 rounded-md bg-gray-600 hover:bg-gray-700">Logout</a>
+              <a href="contact.html"
+                  class="hover:no-underline hover:shadow-md inline-block px-4 py-2 mr-2 rounded-md bg-gray-600 hover:bg-gray-700">Contact Us</a>
+                  <a href="admin_dashboard.php" class="hover:no-underline hover:shadow-md inline-block px-4 py-2 mr-2 rounded-md bg-gray-600 hover:bg-gray-700">Admin Dashboard</a>
+              <div class="mr-4 text-white">  
+              </div>
+          </div>
+      </div>
+  </nav>
+
+
+    <div class="container mx-auto">
+        <div class="text-5xl font-extrabold text-center mt-8">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+                Contact Us
+            </span>
+        </div>
+        <div class="mt-8 text-center">
+            <p class="text-lg text-white">You can contact us through our social media:</p>
+            <div class="mt-4 flex justify-center">
+                <a href="https://www.instagram.com/liva__home/"
+                    class="mx-2 bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700">Instagram</a>
+                <a href="https://m.facebook.com/people/Liva-Home/100064134691383/"
+                    class="mx-2 bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700">Facebook</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto">
+            <p class="text-center">&copy; 2024 UK, All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Script to toggle mobile menu -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuItems = document.querySelector('.hidden.md\\:block');
+
+        menuToggle.addEventListener('click', () => {
+            menuItems.classList.toggle('hidden');
+        });
+    </script>
+                <script>
+                    function toggleMobileMenu() {
+                        var mobileMenu = document.getElementById("mobile-menu");
+                        mobileMenu.classList.toggle("hidden");
+                    }
+                </script>
+</body>
+
+</html>

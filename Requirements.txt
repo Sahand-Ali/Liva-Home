@@ -1,0 +1,6 @@
+Development Tools:
+Integrated Development Environment (IDE): Visual Studio Code
+Database Management System (DBMS): MySQL
+Frontend Frameworks/Libraries: HTML, CSS, JavaScrip
+Backend Framework: PHP for server-side scripting
+Web Server: Apache HTTP Server(XAMPP)
